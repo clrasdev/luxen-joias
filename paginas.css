@@ -1,0 +1,60 @@
+/* Estilos extras das páginas auxiliares - carregar depois do luxen.css */
+header {position: sticky; top: 0; z-index: 200; transition: box-shadow 0.3s;}
+header.rolagem {box-shadow: 0 4px 18px rgba(0,0,0,0.6);}
+a.logo {text-decoration: none; display: block;}
+nav a {padding-bottom: 6px; border-bottom: 2px solid transparent;}
+nav a.ativo {color: var(--dourado); border-bottom-color: var(--dourado);}
+
+/* Botão hambúrguer (criado pelo menu.js) */
+.menu-toggle {display: none; flex-direction: column; gap: 5px; background: none;
+    border: 1px solid var(--dourado); padding: 10px; cursor: pointer;}
+.menu-toggle span {display: block; width: 22px; height: 2px; background: var(--dourado); transition: 0.3s;}
+.menu-toggle.ativo span:nth-child(1) {transform: translateY(7px) rotate(45deg);}
+.menu-toggle.ativo span:nth-child(2) {opacity: 0;}
+.menu-toggle.ativo span:nth-child(3) {transform: translateY(-7px) rotate(-45deg);}
+.menu-toggle:focus-visible, nav a:focus-visible, .botao:focus-visible {outline: 2px solid var(--dourado-claro); outline-offset: 3px;}
+
+/* Cabeçalho das páginas internas */
+.cabecalho-pagina {text-align: center; padding: 80px 20px 60px; background: #121212; border-bottom: 1px solid #30291d;}
+.cabecalho-pagina small {color: var(--dourado); letter-spacing: 5px; font-size: 11px;}
+.cabecalho-pagina h1 {font-family: Georgia, serif; font-size: 48px; font-weight: normal; margin: 18px 0;}
+.cabecalho-pagina p {color: var(--cinza); font-size: 15px; max-width: 520px; margin: 0 auto; line-height: 1.7;}
+.colecao {padding-top: 30px;}
+
+/* Contato */
+.contato-grade {display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; padding: 80px 7% 40px;}
+.contato-card {background: var(--preto-claro); border: 1px solid #29251e; padding: 30px; text-align: center; transition: 0.3s;}
+.contato-card:hover {border-color: var(--dourado);}
+.contato-card h3 {font-family: Georgia, serif; color: var(--dourado-claro); font-size: 22px; font-weight: normal; margin-bottom: 12px;}
+.contato-card p {color: #aaa; font-size: 13px; line-height: 1.7; margin-bottom: 22px;}
+.contato-form-area {padding-bottom: 90px;}
+.formulario {max-width: 600px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: column; gap: 10px;}
+.formulario label {color: var(--dourado); font-size: 11px; letter-spacing: 2px; margin-top: 10px;}
+.formulario input, .formulario select, .formulario textarea {background: var(--preto-claro); border: 1px solid #29251e;
+    color: #fff; padding: 14px; font-size: 14px; font-family: Arial, sans-serif; outline: none; transition: 0.3s;}
+.formulario input:focus, .formulario select:focus, .formulario textarea:focus {border-color: var(--dourado);}
+.formulario .botao {margin-top: 20px; border: none; cursor: pointer;}
+
+@media (max-width: 1000px) {.contato-grade {grid-template-columns: 1fr;}}
+@media (max-width: 750px) {
+    header {flex-direction: row; flex-wrap: wrap; gap: 0; min-height: auto; padding: 15px 7%; justify-content: space-between;}
+    .menu-toggle {display: flex;}
+    nav {display: none; width: 100%; flex-direction: column; gap: 0; margin-top: 15px;}
+    nav.aberto {display: flex;}
+    nav a {padding: 14px 0; text-align: center; border-top: 1px solid #29231a; border-bottom: none;}
+    nav a.ativo {background: #151515;}
+    .cabecalho-pagina h1 {font-size: 36px;}
+}
+@media (prefers-reduced-motion: reduce) {* {transition: none !important; scroll-behavior: auto !important;}}
+
+/* Início e coleção */
+.ver-tudo {text-align: center; margin-top: 45px;}
+.busca {max-width: 650px; margin: 0 auto 45px; padding: 0 15px; text-align: center;}
+.busca input {width: 100%; padding: 15px 22px; background: var(--preto-claro); border: 1px solid var(--dourado);
+    border-radius: 30px; color: #fff; font-size: 15px; outline: none;}
+.busca input:focus {border-color: var(--dourado-claro);}
+.filtros {display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px;}
+.filtros button {padding: 9px 16px; background: transparent; border: 1px solid var(--dourado); color: var(--dourado);
+    border-radius: 20px; font-size: 12px; cursor: pointer; transition: 0.3s;}
+.filtros button:hover, .filtros button.ativo {background: var(--dourado); color: #111;}
+.sem-resultado {color: var(--cinza); margin-top: 22px; font-size: 14px;}
