@@ -3,77 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxen | Joias e Acessórios</title>
-    <link rel="stylesheet" href="loja.css">
+    <title>Coleção | Luxen</title>
+    <link rel="stylesheet" href="luxen.css">
+    <link rel="stylesheet" href="paginas.css">
 </head>
 <body>
-    <!-- Barra de Cima -->
-    <div class="topo">
-        SOFISTICAÇÃO E ELEGÂNCIA EM CADA DETALHE
-    </div>
-    <!-- CAbeçalho -->
+    <div class="topo">SOFISTICAÇÃO E ELEGÂNCIA EM CADA DETALHE</div>
     <header>
-        <div class="logo">
-            LUXEN
-            <span>JOIAS & ACESSÓRIOS</span>
-        </div>
-        <nav> <!--Navegador-->
-            <a href="#inicio">INÍCIO</a>
-            <a href="#colecao">COLEÇÃO</a>
-            <a href="#sobre">SOBRE NÓS</a>
-            <a href="#contato">CONTATO</a>
-        </nav>  
-    </header> <!-- Banner -->
-    <section class="banner" id="inicio">
-        <div class="banner-conteudo">
-            <small>COLEÇÃO EXCLUSIVA</small>
-            <h1>
-                Sua beleza merece
-                <span> brilhar.</span>
-            </h1>
-            <p>
-                Descubra acessórios que traduzem personalidade,
-                elegância e sofisticação. Cada detalhe faz parte
-                da sua essência.
-            </p>
-            <a href="#colecao" class="botao">
-                EXPLORAR COLEÇÃO
-            </a>
-        </div>
+        <a class="logo" href="index.html">LUXEN<span>JOIAS & ACESSÓRIOS</span></a>
+        <nav><a href="index.html">INÍCIO</a><a href="colecao.html">COLEÇÃO</a><a href="sobre.html">SOBRE NÓS</a><a href="contato.html">CONTATO</a></nav>
+    </header>
+    <section class="cabecalho-pagina">
+        <small>CONHEÇA A LUXEN</small>
+        <h1>Nossa Coleção</h1>
+        <p>Escolha seus acessórios favoritos e descubra novas formas de expressar sua beleza.</p>
     </section>
-    <section class="beneficios"> <!--Linha abaixo da foto principal-->
-        <div class="beneficio">
-            <h3>Elegância</h3>
-            <p>Peças escolhidas para valorizar seu estilo.</p>
+    <section class="colecao" id="colecao">
+        <div class="busca">
+            <input type="search" id="pesquisaProduto" placeholder="Pesquisar joias e acessórios..." aria-label="Pesquisar produtos">
+            <div id="filtrosProdutos" class="filtros"></div>
+            <p id="mensagemPesquisa" class="sem-resultado" hidden>Nenhum produto encontrado. Tente outra palavra ou escolha “Todos”.</p>
         </div>
-        <div class="beneficio">
-            <h3>Personalidade</h3>
-            <p>Detalhes que fazem a diferença.</p>
-        </div>
-        <div class="beneficio">
-            <h3>Exclusividade</h3>
-            <p>Encontre acessórios para seus momentos especiais.</p>
-        </div>
-    </section>
-    <section class="colecao" id="colecao"><!-- Nossa Coleção -->
-        <div class="titulo-secao">
-            <small>CONHEÇA A LUXEN</small>
-            <h2>Nossa Coleção</h2>
-            <p>
-                Escolha seus acessórios favoritos e descubra
-                novas formas de expressar sua beleza.
-            </p>
-        </div>
-        <div class="grade-produtos"> <!--Troquem as imagens dos itens e mudem os preços!-->
+        <div class="grade-produtos">
             <div class="produto">
-                <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=85"
-                alt="Colares"> 
+                <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=85" alt="Colares">
                 <div class="produto-info">
                     <h3>Colares</h3>
                     <p>Delicadeza e sofisticação para completar seu visual.</p>
                     <span class="preco">R$ 59,90</span>
                     <a class="consultar" href="https://wa.me/5581999999999?text=Olá!%20Tenho%20interesse%20nos%20colares%20da%20Luxen." target="_blank">CONSULTAR PEÇA</a>
-                    <!--tecnicamente era pra colocar o zap (mas nunca pega quando tento)-->
                 </div>
             </div>
             <div class="produto">
@@ -159,59 +117,19 @@
             </div>
         </div>
     </section>
-    <section class="sobre" id="sobre">
-        <img
-            src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85"
-            alt="Detalhes de joias Luxen">
-        <div>
-            <small>ESSÊNCIA LUXEN</small>
-            <h2>
-                Mais que acessórios,
-                <span>uma expressão de estilo.</span>
-            </h2>
-            <p>
-                Na Luxen, acreditamos que os detalhes fazem
-                toda a diferença. Nossa coleção reúne joias
-                e acessórios selecionados para acompanhar
-                você em seus diferentes momentos.
-            </p>
-            <p>
-                Elegância, personalidade e beleza em peças
-                que valorizam o seu jeito de ser.
-            </p>
-            <a href="#colecao" class="botao">
-                CONHEÇA NOSSA COLEÇÃO
-            </a>
-        </div>
-    </section>  <!-- Contato Abaixo -->
-    <section class="chamada" id="contato">
-        <h2>
-            Seu próximo acessório favorito
-            <span> está aqui.</span>
-        </h2>
-        <p>
-            Gostou de alguma peça? Fale conosco pelo WhatsApp
-            e conheça todos os detalhes da nossa coleção.
-        </p>
-        <a href="https://wa.me/5581999999999?text=Olá!%20Conheci%20a%20Luxen%20pelo%20site%20e%20gostaria%20de%20conhecer%20a%20coleção." target="_blank"
-           class="botao">
-            FALE CONOSCO !
-        </a>
-    </section>  <!-- Rodapé do Site -->
+    <section class="chamada">
+        <h2>Não encontrou o que procura?</h2>
+        <p>Fale com a gente pelo WhatsApp e conheça outras peças disponíveis.</p>
+        <a href="https://wa.me/5581999999999?text=Olá!%20Gostaria%20de%20conhecer%20outras%20peças%20da%20Luxen." target="_blank" class="botao">FALE CONOSCO</a>
+    </section>
     <footer>
         <h2>LUXEN</h2>
         <p>JOIAS & ACESSÓRIOS</p>
-        <div class="redes">
-            <a href="https://instagram.com/" target="_blank">
-                @Luxenjoias_acessorios <!--Instragram hipotético-->
-            </a>
-        </div>
-    </footer>  <!-- Whatsapp-->
-    <a
-        class="whatsapp"
-        href="https://wa.me/5581999999999"
-        target="_blank">
-        WHATSAPP
-    </a>
+        <div class="redes"><a href="https://instagram.com/" target="_blank">@Luxenjoias_acessorios</a></div>
+    </footer>
+    <a class="whatsapp" href="https://wa.me/5581999999999" target="_blank">WHATSAPP</a>
+    <script src="menu.js"></script>
+    <script src="efeitos.js"></script>
+    <script src="colecao.js"></script>
 </body>
 </html>
