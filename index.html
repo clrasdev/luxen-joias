@@ -3,96 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0b0b">
     <title>Luxen | Joias e Acessórios</title>
     <link rel="stylesheet" href="luxen.css">
     <link rel="stylesheet" href="paginas.css">
 </head>
 <body>
     <div class="topo">SOFISTICAÇÃO E ELEGÂNCIA EM CADA DETALHE</div>
+
     <header>
         <a class="logo" href="index.html">LUXEN<span>JOIAS & ACESSÓRIOS</span></a>
-        <nav><a href="index.html">INÍCIO</a><a href="colecao.html">COLEÇÃO</a><a href="sobre.html">SOBRE NÓS</a><a href="contato.html">CONTATO</a></nav>
+        <nav>
+            <a href="index.html" aria-current="page">INÍCIO</a>
+            <a href="colecao.html">COLEÇÃO</a>
+            <a href="carrinho.html">CARRINHO <span id="contagemCarrinho" aria-live="polite">(0)</span></a>
+            <a href="sobre.html">SOBRE NÓS</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
     </header>
-    <section class="banner" id="inicio">
-        <div class="banner-conteudo">
-            <small>COLEÇÃO EXCLUSIVA</small>
-            <h1>Sua beleza merece <span>brilhar.</span></h1>
-            <p>Descubra acessórios que traduzem personalidade, elegância e sofisticação. Cada detalhe faz parte da sua essência.</p>
-            <a href="colecao.html" class="botao">EXPLORAR COLEÇÃO</a>
-        </div>
-    </section>
-    <section class="beneficios">
-        <div class="beneficio"><h3>Elegância</h3><p>Peças escolhidas para valorizar seu estilo.</p></div>
-        <div class="beneficio"><h3>Personalidade</h3><p>Detalhes que fazem a diferença.</p></div>
-        <div class="beneficio"><h3>Exclusividade</h3><p>Encontre acessórios para seus momentos especiais.</p></div>
-    </section>
-    <section class="colecao">
-        <div class="titulo-secao">
-            <small>EM DESTAQUE</small>
-            <h2>Nossa Coleção</h2>
-            <p>Uma seleção para você começar. Veja todas as peças na página da coleção.</p>
-        </div>
-        <div class="grade-produtos">
-            <div class="produto">
-                <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=85" alt="Colares">
-                <div class="produto-info">
-                    <h3>Colares</h3>
-                    <p>Delicadeza e sofisticação para completar seu visual.</p>
-                    <span class="preco">R$ 59,90</span>
-                    <a class="consultar" href="https://wa.me/5581999999999?text=Olá!%20Tenho%20interesse%20nos%20colares%20da%20Luxen." target="_blank">CONSULTAR PEÇA</a>
-                </div>
+
+    <main>
+        <section class="banner" id="inicio">
+            <div class="banner-conteudo">
+                <small>NOVA COLEÇÃO · OFERTAS ESPECIAIS</small>
+                <h1>Sua beleza merece <span>brilhar.</span></h1>
+                <p>Descubra acessórios que traduzem personalidade, elegância e sofisticação. Cada detalhe faz parte da sua essência.</p>
+                <a href="#colecao" class="botao">CONHECER COLEÇÃO</a>
             </div>
-            <div class="produto">
-                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=85" alt="Anéis">
-                <div class="produto-info">
-                    <h3>Anéis</h3>
-                    <p>Pequenos detalhes que revelam sua personalidade.</p>
-                    <span class="preco">R$ 39,90</span>
-                    <a class="consultar" href="https://wa.me/5581999999999?text=Olá!%20Tenho%20interesse%20nos%20anéis%20da%20Luxen." target="_blank">CONSULTAR PEÇA</a>
-                </div>
+        </section>
+
+        <section class="beneficios" aria-label="Diferenciais Luxen">
+            <div class="beneficio"><h3>Elegância</h3><p>Peças escolhidas para valorizar seu estilo.</p></div>
+            <div class="beneficio"><h3>Personalidade</h3><p>Detalhes que fazem a diferença.</p></div>
+            <div class="beneficio"><h3>Exclusividade</h3><p>Encontre acessórios para seus momentos especiais.</p></div>
+        </section>
+
+        <section class="colecao" id="colecao">
+            <div class="titulo-secao">
+                <small>NOVA COLEÇÃO · DESTAQUES</small>
+                <h2>Descubra suas próximas peças favoritas</h2>
+                <p>Explore nossa seleção de joias e acessórios e encontre os detalhes que combinam com você.</p>
             </div>
-            <div class="produto">
-                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=85" alt="Pulseiras">
-                <div class="produto-info">
-                    <h3>Pulseiras</h3>
-                    <p>Charme e beleza em todos os movimentos.</p>
-                    <span class="preco">R$ 45,90</span>
-                    <a class="consultar" href="https://wa.me/5581999999999?text=Olá!%20Tenho%20interesse%20nas%20pulseiras%20da%20Luxen." target="_blank">CONSULTAR PEÇA</a>
-                </div>
+
+            <div class="grade-produtos">
+                <article class="produto">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_802585-MLB104387126373_012026-B-kit-3-cintos-fino-das-tiktokers-cinto-feminino-elegante-moda.webp" alt="Kit de cintos femininos" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Cintos</h3>
+                        <p>O acessório perfeito para transformar seu look.</p>
+                        <span class="preco">R$ 69,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20nos%20cintos%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://thumb.braavo.me/trudys/1000/468142388.webp" alt="Colar dourado delicado" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Colar Dourado</h3>
+                        <p>Colar delicado com acabamento dourado para iluminar seu look.</p>
+                        <span class="preco">R$ 64,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20no%20colar%20dourado%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://dh9mkiolokjyr.cloudfront.net/Custom/Content/Products/21/30/21301_colar-perola-banho-40-cm-pr-10909-69609_l2_638621892996508627.webp" alt="Colar de pérolas" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Colar de Pérolas</h3>
+                        <p>Pérolas clássicas em uma peça elegante para ocasiões especiais.</p>
+                        <span class="preco">R$ 89,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20no%20colar%20de%20p%C3%A9rolas%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://assets.sistemawbuy.com.br/arquivos/020b00e4d39977caa0f06c6c844db8d3/produtos/696d62ebabef9/anel-solitario-chuverinho-redondo-ouro-6a761530d1ce0.jpg" alt="Anel solitário dourado" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Anel Solitário</h3>
+                        <p>Anel delicado com brilho especial, perfeito para presentear.</p>
+                        <span class="preco">R$ 49,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20no%20anel%20solit%C3%A1rio%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuT15jF0B_9aHxatL0QvZfA309vsYbeRY2HpMJsWYvpXj8Ctgj6ZpEk10&s=10" alt="Brincos de argola dourada" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Argolas Douradas</h3>
+                        <p>Brincos de argola versáteis para usar do dia a dia à noite.</p>
+                        <span class="preco">R$ 42,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20nas%20argolas%20douradas%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://ricchezzaprata.bwimg.com.br/ricchezzaprata/produtos/brinco-prata-925-pendurado-pedra-natural-gota-020605620700-03-20251008150735-1759969186.6006.jpg" alt="Brincos com pedras naturais" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Brincos com Pedras</h3>
+                        <p>Brincos com detalhes brilhantes que destacam qualquer produção.</p>
+                        <span class="preco">R$ 54,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20nos%20brincos%20com%20pedras%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=85" alt="Pulseira de elos" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Pulseira de Elos</h3>
+                        <p>Pulseira dourada de elos para combinar com seus acessórios favoritos.</p>
+                        <span class="preco">R$ 47,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20pulseira%20de%20elos%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://cdn.awsli.com.br/2452/2452519/produto/400757467/9842e4fe341141cc98adb197d496d9f7-tm5fby8l9a.jpg" alt="Conjunto de colar e brincos" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Conjunto Elegance</h3>
+                        <p>Conjunto de colar e brincos para um visual harmonioso e sofisticado.</p>
+                        <span class="preco">R$ 99,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Conjunto%20Elegance%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://acdn-us.mitiendanube.com/stores/473/030/products/presilha-bico-de-pato-com-pedras-brilhantes-e-strass-prata-ou-dourada-7-82f29717a2cd2011a417872732854143-1024-1024.webp" alt="Presilha com pedras brilhantes" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Presilha com Brilho</h3>
+                        <p>Presilha delicada com brilho para completar penteados especiais.</p>
+                        <span class="preco">R$ 24,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20presilha%20com%20brilho%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
+
+                <article class="produto">
+                    <img src="https://images.tcdn.com.br/img/img_prod/680812/cordo_colar_e_pingente_arvore_da_vida_folheado_a_o_2_20260215180419_2c2a9990b4fd.jpg" alt="Colar com pingente árvore da vida" loading="lazy">
+                    <div class="produto-info">
+                        <h3>Colar com Pingente</h3>
+                        <p>Colar com pingente delicado para presentear ou usar todos os dias.</p>
+                        <span class="preco">R$ 58,90</span>
+                        <a class="consultar" href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Tenho%20interesse%20no%20colar%20com%20pingente%20da%20Luxen." target="_blank" rel="noopener noreferrer">CONSULTAR PEÇA</a>
+                    </div>
+                </article>
             </div>
-            <div class="produto">
-                <img src="https://images.unsplash.com/photo-1624222247344-550fb8b4a9f7?auto=format&fit=crop&w=700&q=85" alt="Cintos">
-                <div class="produto-info">
-                    <h3>Cintos</h3>
-                    <p>O acessório perfeito para transformar seu look.</p>
-                    <span class="preco">R$ 69,90</span>
-                    <a class="consultar" href="https://wa.me/5581999999999?text=Olá!%20Tenho%20interesse%20nos%20cintos%20da%20Luxen." target="_blank">CONSULTAR PEÇA</a>
-                </div>
+
+            <div class="ver-tudo"><a href="colecao.html" class="botao">VER COLEÇÃO COMPLETA</a></div>
+        </section>
+
+        <section class="sobre">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85" alt="Detalhes de joias Luxen" loading="lazy">
+            <div>
+                <small>ESSÊNCIA LUXEN</small>
+                <h2>Mais que acessórios, <span>uma expressão de estilo.</span></h2>
+                <p>Na Luxen, acreditamos que os detalhes fazem toda a diferença. Nossa coleção reúne joias e acessórios selecionados para acompanhar você em seus diferentes momentos.</p>
+                <p>Elegância, personalidade e beleza em peças que valorizam o seu jeito de ser.</p>
+                <a href="sobre.html" class="botao">SOBRE NÓS</a>
             </div>
-        </div>
-        <div class="ver-tudo"><a href="colecao.html" class="botao">VER COLEÇÃO COMPLETA</a></div>
-    </section>
-    <section class="sobre">
-        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85" alt="Detalhes de joias Luxen">
-        <div>
-            <small>ESSÊNCIA LUXEN</small>
-            <h2>Mais que acessórios, <span>uma expressão de estilo.</span></h2>
-            <p>Na Luxen, acreditamos que os detalhes fazem toda a diferença. Nossa coleção reúne joias e acessórios selecionados para acompanhar você em seus diferentes momentos.</p>
-            <a href="sobre.html" class="botao">CONHEÇA A LUXEN</a>
-        </div>
-    </section>
-    <section class="chamada">
-        <h2>Seu próximo acessório favorito <span>está aqui.</span></h2>
-        <p>Gostou de alguma peça? Fale conosco pelo WhatsApp e conheça todos os detalhes da nossa coleção.</p>
-        <a href="https://wa.me/5581999999999?text=Olá!%20Conheci%20a%20Luxen%20pelo%20site%20e%20gostaria%20de%20conhecer%20a%20coleção." target="_blank" class="botao">FALE CONOSCO</a>
-    </section>
+        </section>
+
+        <section class="chamada" id="contato">
+            <h2>Seu próximo acessório favorito <span>está aqui.</span></h2>
+            <p>Gostou de alguma peça? Fale conosco pelo WhatsApp e conheça todos os detalhes da nossa coleção.</p>
+            <a href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Conheci%20a%20Luxen%20pelo%20site%20e%20gostaria%20de%20conhecer%20a%20cole%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="botao">FALE CONOSCO</a>
+        </section>
+    </main>
+
     <footer>
         <h2>LUXEN</h2>
         <p>JOIAS & ACESSÓRIOS</p>
-        <div class="redes"><a href="https://instagram.com/" target="_blank">@Luxenjoias_acessorios</a></div>
+        <div class="redes"><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">@Luxenjoias_acessorios</a></div>
     </footer>
-    <a class="whatsapp" href="https://wa.me/5581999999999" target="_blank">WHATSAPP</a>
+
+    <a class="whatsapp" href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+
     <script src="menu.js"></script>
     <script src="efeitos.js"></script>
+    <script src="carrinho.js"></script>
 </body>
 </html>
