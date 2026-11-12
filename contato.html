@@ -11,53 +11,65 @@
     <div class="topo">SOFISTICAÇÃO E ELEGÂNCIA EM CADA DETALHE</div>
     <header>
         <a class="logo" href="index.html">LUXEN<span>JOIAS & ACESSÓRIOS</span></a>
-        <nav><a href="index.html">INÍCIO</a><a href="colecao.html">COLEÇÃO</a><a href="sobre.html">SOBRE NÓS</a><a href="contato.html">CONTATO</a></nav>
+        <nav>
+            <a href="index.html">INÍCIO</a>
+            <a href="colecao.html">COLEÇÃO</a>
+            <a href="carrinho.html">CARRINHO <span id="contagemCarrinho" aria-live="polite">(0)</span></a>
+            <a href="sobre.html">SOBRE NÓS</a>
+            <a href="contato.html" aria-current="page">CONTATO</a>
+        </nav>
     </header>
-    <section class="cabecalho-pagina">
-        <small>FALE CONOSCO</small>
-        <h1>Contato</h1>
-        <p>Gostou de alguma peça? Escolha a melhor forma de falar com a gente.</p>
-    </section>
-    <section class="contato-grade">
-        <div class="contato-card">
-            <h3>WhatsApp</h3>
-            <p>Atendimento rápido para dúvidas, valores e encomendas.</p>
-            <a class="consultar" href="https://wa.me/5581999999999" target="_blank">CHAMAR NO WHATSAPP</a>
-        </div>
-        <div class="contato-card">
-            <h3>Instagram</h3>
-            <p>Acompanhe as novidades e os lançamentos da coleção.</p>
-            <a class="consultar" href="https://instagram.com/" target="_blank">@Luxenjoias_acessorios</a>
-        </div>
-        <div class="contato-card">
-            <h3>Atendimento</h3>
-            <p>Segunda a sexta, das 9h às 18h.<br>Sábado, das 9h às 13h.</p>
-        </div>
-    </section>
-    <section class="contato-form-area">
-        <div class="titulo-secao"><small>MENSAGEM</small><h2>Envie sua mensagem</h2>
-        <p>Preencha os campos e abriremos o WhatsApp com tudo pronto para enviar.</p></div>
-        <form id="formContato" class="formulario">
-            <label for="nome">Seu nome</label>
-            <input type="text" id="nome" required placeholder="Como podemos te chamar?">
-            <label for="interesse">Tenho interesse em</label>
-            <select id="interesse">
-                <option>Colares</option><option>Anéis</option><option>Pulseiras</option>
-                <option>Cintos</option><option>Tiaras</option><option>Braceletes</option>
-                <option>Brincos</option><option>Presilhas</option><option>Lenços</option>
-                <option>Echarpes</option><option>Outro assunto</option>
-            </select>
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" rows="5" placeholder="Escreva sua dúvida ou pedido..."></textarea>
-            <button type="submit" class="botao">ENVIAR PELO WHATSAPP</button>
-        </form>
-    </section>
+    <main>
+        <section class="cabecalho-pagina">
+            <small>FALE CONOSCO</small>
+            <h1>Contato</h1>
+            <p>Gostou de alguma peça? Escolha a melhor forma de falar com a gente.</p>
+        </section>
+        <section class="contato-grade">
+            <div class="contato-card">
+                <h3>WhatsApp</h3>
+                <p>Atendimento para dúvidas, valores e encomendas.</p>
+                <a class="consultar" href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer">CHAMAR NO WHATSAPP</a>
+            </div>
+            <div class="contato-card">
+                <h3>Instagram</h3>
+                <p>Acompanhe as novidades e os lançamentos da coleção.</p>
+                <a class="consultar" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">@Luxenjoias_acessorios</a>
+            </div>
+            <div class="contato-card">
+                <h3>Atendimento</h3>
+                <p>Segunda a sexta, das 9h às 18h.<br>Sábado, das 9h às 13h.</p>
+            </div>
+        </section>
+        <section class="contato-form-area">
+            <div class="titulo-secao">
+                <small>MENSAGEM</small>
+                <h2>Envie sua mensagem</h2>
+                <p>Preencha os campos e abriremos o WhatsApp com tudo pronto para enviar.</p>
+            </div>
+            <form id="formContato" class="formulario">
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" required placeholder="Como podemos te chamar?">
+                <label for="interesse">Tenho interesse em</label>
+                <select id="interesse">
+                    <option>Colares</option><option>Anéis</option><option>Pulseiras</option>
+                    <option>Cintos</option><option>Tiaras</option><option>Braceletes</option>
+                    <option>Brincos</option><option>Presilhas</option><option>Lenços</option>
+                    <option>Echarpes</option><option>Outro assunto</option>
+                </select>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Escreva sua dúvida ou pedido..."></textarea>
+                <button type="submit" class="botao">ENVIAR PELO WHATSAPP</button>
+            </form>
+        </section>
+    </main>
     <footer>
         <h2>LUXEN</h2>
         <p>JOIAS & ACESSÓRIOS</p>
-        <div class="redes"><a href="https://instagram.com/" target="_blank">@Luxenjoias_acessorios</a></div>
+        <div class="redes"><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">@Luxenjoias_acessorios</a></div>
     </footer>
-    <a class="whatsapp" href="https://wa.me/5581999999999" target="_blank">WHATSAPP</a>
+    <a class="whatsapp" href="https://wa.me/5581999999999" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
     <script src="menu.js"></script>
+    <script src="carrinho.js"></script>
 </body>
 </html>
