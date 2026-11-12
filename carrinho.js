@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const nome = produto.querySelector("h3")?.textContent.trim();
         const descricao = produto.querySelector("p")?.textContent.trim() || "";
         const precoTexto = produto.querySelector(".preco")?.textContent || "";
-        const preco = Number(precoTexto.replace(/[^\\d,]/g, "").replace(",", "."));
+        const preco = Number(precoTexto.replace(/[^\d,]/g, "").replace(",", "."));
         const imagem = produto.querySelector("img")?.getAttribute("src") || "";
         const area = produto.querySelector(".produto-info");
         if (!nome || !Number.isFinite(preco) || !area) return;
