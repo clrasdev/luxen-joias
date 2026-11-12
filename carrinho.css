@@ -1,0 +1,128 @@
+/* Carrinho de compras - identidade visual Luxen */
+.carrinho-pagina {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.8fr);
+    gap: 30px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 10px 7% 90px;
+}
+.carrinho-lista, .resumo-compra {
+    border: 1px solid #30291d;
+    background: #151515;
+    padding: 24px;
+}
+.carrinho-vazio {
+    color: var(--cinza);
+    line-height: 1.8;
+}
+.item-carrinho {
+    display: grid;
+    grid-template-columns: 82px minmax(0, 1fr) auto;
+    gap: 16px;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #30291d;
+}
+.item-carrinho:first-child { padding-top: 0; }
+.item-carrinho:last-child { border-bottom: 0; }
+.item-carrinho img {
+    width: 82px;
+    height: 82px;
+    object-fit: cover;
+    background: #222;
+}
+.detalhes-carrinho h3 {
+    color: var(--dourado-claro);
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+.detalhes-carrinho p {
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.controles-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.controles-quantidade button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--dourado);
+    background: transparent;
+    color: var(--dourado);
+    font-size: 18px;
+    cursor: pointer;
+}
+.controles-quantidade button:hover {
+    background: var(--dourado);
+    color: #111;
+}
+.subtotal-item {
+    color: #fff;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.resumo-compra h2 {
+    color: var(--dourado-claro);
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+.linha-total {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 16px 0;
+    border-top: 1px solid #30291d;
+    border-bottom: 1px solid #30291d;
+    color: #ddd;
+}
+.linha-total strong { color: var(--dourado-claro); }
+.continuar-comprando {
+    display: inline-block;
+    margin-top: 22px;
+    color: var(--dourado);
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.limpar-carrinho, .adicionar-carrinho {
+    width: 100%;
+    margin-top: 14px;
+    padding: 13px 12px;
+    border: 1px solid var(--dourado);
+    background: transparent;
+    color: var(--dourado);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s;
+}
+.adicionar-carrinho { margin: 0 0 10px; }
+.limpar-carrinho:hover:not(:disabled), .adicionar-carrinho:hover {
+    background: var(--dourado);
+    color: #111;
+}
+.limpar-carrinho:disabled { opacity: .45; cursor: not-allowed; }
+.aviso-carrinho {
+    margin-top: 14px;
+    color: #999;
+    font-size: 11px;
+    line-height: 1.7;
+}
+@media (max-width: 750px) {
+    .carrinho-pagina { grid-template-columns: 1fr; }
+}
+@media (max-width: 450px) {
+    .item-carrinho { grid-template-columns: 60px minmax(0, 1fr); }
+    .item-carrinho img { width: 60px; height: 60px; }
+    .subtotal-item { grid-column: 2; }
+    .carrinho-lista, .resumo-compra { padding: 17px; }
+}
