@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Luxen</title>
+    <link rel="stylesheet" href="luxen.css">
+    <link rel="stylesheet" href="paginas.css">
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <div class="topo">SOFISTICAÇÃO E ELEGÂNCIA EM CADA DETALHE</div>
+    <header>
+        <a class="logo" href="index.html">LUXEN<span>JOIAS & ACESSÓRIOS</span></a>
+        <nav>
+            <a href="index.html">INÍCIO</a>
+            <a href="colecao.html">COLEÇÃO</a>
+            <a href="carrinho.html" aria-current="page">CARRINHO <span id="contagemCarrinho" aria-live="polite">(0)</span></a>
+            <a href="sobre.html">SOBRE NÓS</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cabecalho-pagina">
+            <small>SUA ESCOLHA, SEU ESTILO</small>
+            <h1>Seu carrinho</h1>
+            <p>Confira as peças que você escolheu antes de continuar.</p>
+        </section>
+        <section class="carrinho-pagina">
+            <div class="carrinho-lista">
+                <div id="itensCarrinho" aria-live="polite"></div>
+                <a class="continuar-comprando" href="colecao.html">← CONTINUAR COMPRANDO</a>
+            </div>
+            <aside class="resumo-compra">
+                <h2>Resumo do pedido</h2>
+                <p class="linha-total"><span>Total</span><strong id="totalCarrinho">R$ 0,00</strong></p>
+                <button id="limparCarrinho" class="limpar-carrinho" type="button" disabled>ESVAZIAR CARRINHO</button>
+                <p class="aviso-carrinho">Esta é uma demonstração acadêmica. O site não realiza cobrança nem recebe dados de pagamento.</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <h2>LUXEN</h2>
+        <p>JOIAS & ACESSÓRIOS</p>
+        <div class="redes"><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">@Luxenjoias_acessorios</a></div>
+    </footer>
+    <script src="menu.js"></script>
+    <script src="carrinho.js"></script>
+</body>
+</html>
