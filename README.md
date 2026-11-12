@@ -52,7 +52,7 @@ A proposta é desenvolver uma plataforma que permita conhecer os produtos, explo
 - Maria Clara Nascimento Carneiro - 01711761
 - Nicole Menezes Frota - 01868698
 - Yasmim Laura da Silva Macena - 01905732
-- XXXXXXXXXXXXXXXXXXXXXXX
+- Yasmin Fernandes Lira - 01898260
 
 ## Como Executar o Projeto
 
@@ -68,6 +68,7 @@ A proposta é desenvolver uma plataforma que permita conhecer os produtos, explo
 - **Período:** 2º período.
 - **Projeto:** Luxen Joias e Acessórios.
 - **Desenvolvimento:** Trabalho em equipe.
+- **Docente:** Leopoldo Rodrigues França Neto
 
 ## Observação
 
